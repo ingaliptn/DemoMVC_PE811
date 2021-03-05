@@ -1,0 +1,14 @@
+﻿@using Entities
+@{
+    ViewData["Title"] = "Sequre Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Sequre</h1>
+    @Html.Ulist("str1", "str2", "str3")
+
+    @using (Html.BeginForm("List", "Student"))
+    {
+        @Html.TextArea("Name", new { type = "text", placeholder = "aaaaaa" });
+    }
+</div>
